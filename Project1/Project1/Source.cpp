@@ -474,12 +474,12 @@ int main(void)
 					color2++;
 				}
 			}
-			if (IsKeyDown(KEY_ENTER))
+			if (IsKeyPressed(KEY_ENTER))
 			{
 				UnloadTexture(title);
 				game = true;
 			}
-			if (IsKeyDown(KEY_Q))
+			if (IsKeyPressed(KEY_Q))
 			{
 				IA = true;
 				game = true;
@@ -539,11 +539,18 @@ int main(void)
 			DrawText(FormatText("Puntaje J2:"), 400, 300, 30, WHITE);
 
 			DrawText("Para jugar otra vez presione Enter", 100, 350, 35, WHITE);
-			if (IsKeyDown(KEY_ENTER))
+			if (IsKeyPressed(KEY_ENTER))
 			{
 				game = true;
 				contadorP1 = 0;
 				contadorP2 = 0;
+			}
+			DrawText("Para volver al menu presione Q", 100, 390, 35, WHITE);
+			if (IsKeyPressed(KEY_Q))
+			{
+				contadorP1 = 0;
+				contadorP2 = 0;
+				LoadTexture("Assets/Title.png");
 			}
 
 			EndDrawing();
