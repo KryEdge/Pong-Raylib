@@ -169,12 +169,3 @@ void playGame()
 	drawGame();
 }
 
-void gameMenu()
-{
-	drawMenu();
-}
-
-void gameOver()
-{
-	drawGameOver();
-}

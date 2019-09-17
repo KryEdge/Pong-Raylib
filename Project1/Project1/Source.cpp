@@ -1,5 +1,7 @@
 #include "raylib.h"
 #include "game.h"
+#include "GMenu.h"
+#include "GOver.h"
 
 int main(void)
 {
@@ -15,11 +17,11 @@ int main(void)
 		}
 		else if (!game && (contadorP1 < 5 && contadorP2 < 5))
 		{
-			gameMenu();
+			menu();
 		}
 		if (!game && (contadorP1 == 5 || contadorP2 == 5))
 		{
-			gameOver();
+			gameOVER();
 		}
 	}
 	CloseAudioDevice();

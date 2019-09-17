@@ -77,7 +77,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\raylib-2.5.0-Win32-msvc15\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <CompileAs>CompileAsC</CompileAs>
+      <CompileAs>Default</CompileAs>
       <PreprocessorDefinitions>GRAPHICS_API_OPENGL_33;PLATFORM_DESKTOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -124,6 +124,8 @@
   <ItemGroup>
     <ClCompile Include="Dibujo.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="GameOVER.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Pelota.cpp" />
     <ClCompile Include="Players.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -131,6 +133,8 @@
   <ItemGroup>
     <ClInclude Include="Dibujo.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="GMenu.h" />
+    <ClInclude Include="GOver.h" />
     <ClInclude Include="pelota.h" />
     <ClInclude Include="Players.h" />
   </ItemGroup>

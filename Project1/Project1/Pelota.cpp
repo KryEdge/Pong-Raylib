@@ -2,9 +2,9 @@
 #include "Players.h"
 #include "raylib.h"
 
-const int directionx = 7;
-const int directiony = 6;
-const int radio = 20;
+int directionx = 7;
+int directiony = 6;
+int radio = 20;
 Vector2 ballPosition;
 Color colorBola;
 
@@ -42,11 +42,9 @@ void ballMovement()
 			default:
 				break;
 			}
-			directionx += incremento;
 		}
 		else
 		{
-			directionx -= incremento;
 			switch (color1)
 			{
 			case 0:

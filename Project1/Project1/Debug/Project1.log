@@ -1,156 +1,51 @@
 ﻿  Dibujo.cpp
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(8): error C2061: error de sintaxis: identificador 'game'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(8): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(9): error C2061: error de sintaxis: identificador 'win'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(9): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(15): error C2061: error de sintaxis: identificador 'IA'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(15): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(16): error C2061: error de sintaxis: identificador 'Goal1'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(16): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(17): error C2061: error de sintaxis: identificador 'Goal2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(17): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(19): error C2061: error de sintaxis: identificador 'pUpPosition1'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(19): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(20): error C2061: error de sintaxis: identificador 'pUpPosition2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(20): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(21): error C2061: error de sintaxis: identificador 'pUpPosition3'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(21): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(23): error C2061: error de sintaxis: identificador 'hitWav'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(23): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(24): error C2061: error de sintaxis: identificador 'pickupWav'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(24): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(25): error C2065: 'pUpPosition1': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(25): error C2224: el operando izquierdo de '.x' debe tener el tipo struct/union
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(26): error C2065: 'pUpPosition1': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(26): error C2224: el operando izquierdo de '.y' debe tener el tipo struct/union
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(27): error C2065: 'pUpPosition1': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(27): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Vector2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(27): warning C4024: 'DrawCircleV': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(27): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(30): error C2065: 'pUpPosition2': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(30): error C2224: el operando izquierdo de '.x' debe tener el tipo struct/union
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(31): error C2065: 'pUpPosition2': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(31): error C2224: el operando izquierdo de '.y' debe tener el tipo struct/union
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(32): error C2065: 'pUpPosition2': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(32): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Vector2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(32): warning C4024: 'DrawCircleV': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(32): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(35): error C2065: 'pUpPosition3': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(35): error C2224: el operando izquierdo de '.x' debe tener el tipo struct/union
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(36): error C2065: 'pUpPosition3': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(36): error C2224: el operando izquierdo de '.y' debe tener el tipo struct/union
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(37): error C2065: 'pUpPosition3': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(37): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Vector2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(37): warning C4024: 'DrawCircleV': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(37): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(67): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(71): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(75): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(96): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(100): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(104): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(107): error C2065: 'Goal1': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(107): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Rectangle'
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(107): warning C4024: 'DrawRectangleRec': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(108): error C2065: 'Goal2': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(108): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Rectangle'
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(108): warning C4024: 'DrawRectangleRec': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(111): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(161): error C2065: 'game': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(165): error C2065: 'IA': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(166): error C2065: 'game': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(226): error C2065: 'game': identificador no declarado
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(25): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(26): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(27): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(30): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(31): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(35): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(36): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(37): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(67): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(71): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(75): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(96): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(100): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(104): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\dibujo.cpp(111): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
   game.cpp
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(14): warning C4305: 'inicializando': truncamiento de 'double' a 'const float'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(32): warning C4244: 'inicializando': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(33): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(33): warning C4244: 'inicializando': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(38): warning C4101: 'hitWav': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(39): warning C4101: 'pickupWav': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(45): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(45): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
 c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(47): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
 c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(48): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(49): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(51): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(52): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(59): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(49): error C3892: 'radio': no se puede asignar a una variable constante
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(59): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
 c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(61): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
 c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(62): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(63): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(69): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(70): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(78): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(78): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(93): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(93): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(108): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(108): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(123): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(123): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(139): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(139): warning C4244: 'función': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(141): error C2166: Valor L especifica un objeto const
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(63): error C3892: 'radio': no se puede asignar a una variable constante
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(78): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(78): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(93): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(93): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(108): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(123): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(123): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(139): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(139): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(141): error C3892: 'radio': no se puede asignar a una variable constante
+c:\users\administrador\desktop\pong-raylib\project1\project1\game.cpp(169): error C3861: 'drawGame': no se encontró el identificador
+  GameOVER.cpp
+  Menu.cpp
   Pelota.cpp
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(8): error C2061: error de sintaxis: identificador 'game'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(8): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(9): error C2061: error de sintaxis: identificador 'win'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(9): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(15): error C2061: error de sintaxis: identificador 'IA'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(15): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(16): error C2061: error de sintaxis: identificador 'Goal1'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(16): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(17): error C2061: error de sintaxis: identificador 'Goal2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(17): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(19): error C2061: error de sintaxis: identificador 'pUpPosition1'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(19): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(20): error C2061: error de sintaxis: identificador 'pUpPosition2'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(20): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(21): error C2061: error de sintaxis: identificador 'pUpPosition3'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(21): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(23): error C2061: error de sintaxis: identificador 'hitWav'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(23): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(24): error C2061: error de sintaxis: identificador 'pickupWav'
-c:\users\administrador\desktop\pong-raylib\project1\project1\game.h(24): error C2059: error de sintaxis: ';'
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(23): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(24): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(45): warning C4244: '+=': conversión de 'const float' a 'const int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(45): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(49): warning C4244: '-=': conversión de 'const float' a 'const int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(49): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(69): error C2065: 'hitWav': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(69): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Sound'
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(69): warning C4024: 'IsSoundPlaying': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(71): error C2065: 'hitWav': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(71): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Sound'
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(71): warning C4024: 'PlaySound': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(74): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(76): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(80): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(85): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(89): warning C4244: '+=': conversión de 'const float' a 'const int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(89): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(93): warning C4244: '-=': conversión de 'const float' a 'const int'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(93): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(96): error C2065: 'hitWav': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(96): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Sound'
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(96): warning C4024: 'IsSoundPlaying': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(98): error C2065: 'hitWav': identificador no declarado
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(98): error C2440: 'función': no se puede realizar la conversión de 'int' a 'Sound'
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(98): warning C4024: 'PlaySound': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(101): error C2166: Valor L especifica un objeto const
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(103): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(107): warning C4244: 'función': conversión de 'const int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(87): warning C4244: '+=': conversión de 'const float' a 'int'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\pelota.cpp(91): warning C4244: '-=': conversión de 'const float' a 'int'; posible pérdida de datos
   Players.cpp
 c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(18): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
 c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(19): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
 c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(20): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(21): warning C4838: la conversión de 'int' en 'float' requiere una conversión de restricción
 c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(21): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(27): warning C4101: 'title': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(32): warning C4101: 'enemyLONG': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(30): warning C4101: 'backG': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(33): warning C4101: 'playerSHORT': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(34): warning C4101: 'enemySHORT': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(31): warning C4101: 'playerLONG': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(29): warning C4101: 'enemy': variable local sin referencia
-c:\users\administrador\desktop\pong-raylib\project1\project1\players.cpp(28): warning C4101: 'player': variable local sin referencia
+  Source.cpp
   Generando código...

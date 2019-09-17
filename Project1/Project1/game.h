@@ -1,4 +1,5 @@
 #pragma once
+#include "raylib.h"
 
 extern const int screenWidth;
 extern const int screenHeight;
@@ -24,5 +25,3 @@ extern Sound hitWav;
 extern Sound pickupWav;
 
 void playGame();
-void gameMenu();
-void gameOver();
