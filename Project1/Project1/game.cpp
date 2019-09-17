@@ -175,6 +175,7 @@ void playGame()
 
 	if (contadorP1 == 5 || contadorP2 == 5)
 	{
+		Init = false;
 		game = false;
 	}	
 }

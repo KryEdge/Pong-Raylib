@@ -1,6 +1,7 @@
 #include "raylib.h"
 #include "Players.h"
 #include "game.h"
+#include "GMenu.h"
 
 void gameOVER()
 {
@@ -30,9 +31,9 @@ void gameOVER()
 	DrawText("Para volver al menu presione Q", 100, 390, 35, WHITE);
 	if (IsKeyPressed(KEY_Q))
 	{
+		Initialize = false;
 		contadorP1 = 0;
 		contadorP2 = 0;
-		LoadTexture("Assets/Title.png");
 	}
 
 	EndDrawing();
