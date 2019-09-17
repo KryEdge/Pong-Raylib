@@ -2,11 +2,18 @@
 #include "game.h"
 #include "Players.h"
 
+bool Initialize = false;
+
 void menu()
 {
+	if (!Initialize)
+	{
+		title = LoadTexture("Assets/Title.png");
+		Initialize = true;
+	}
+
 	BeginDrawing();
 	ClearBackground(DARKGRAY);
-
 	DrawTexture(title, screenWidth / 2 - 80, 0, WHITE);
 
 	DrawText("Elija su color", 210, screenHeight / 2, 60, WHITE);
@@ -75,7 +82,7 @@ void menu()
 	switch (color2)
 	{
 	case 0:
-		DrawRectangle(500, 300, 200, 40, LIGHTGRAY);
+		DrawRectangle(500, 300, 200, 40, DARKGREEN);
 		break;
 	case 1:
 		DrawRectangle(500, 300, 200, 40, ORANGE);

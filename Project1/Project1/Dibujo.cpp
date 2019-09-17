@@ -3,7 +3,7 @@
 #include "pelota.h"
 #include "Players.h"
 
-void executeGame()
+void drawGame()
 {
 	BeginDrawing();
 	ClearBackground(BLACK);
@@ -77,7 +77,7 @@ void executeGame()
 	switch (color2)
 	{
 	case 0:
-		DrawRectangleRec(Player2, LIGHTGRAY);
+		DrawRectangleRec(Player2, DARKGREEN);
 		break;
 	case 1:
 		DrawRectangleRec(Player2, ORANGE);

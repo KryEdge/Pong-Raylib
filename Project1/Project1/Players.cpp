@@ -2,8 +2,6 @@
 #include "game.h"
 #include "pelota.h"
 
-Rectangle Player1;
-Rectangle Player2;
 int color1 = 0;
 int color2 = 0;
 int playerHeight = 100;
@@ -11,27 +9,45 @@ bool ENElong = false;
 bool PLAYlong = false;
 bool ENEshort = false;
 bool PLAYshort = false;
-float P1X = 40;
+
+Texture2D title;
+Texture2D player;
+Texture2D enemy;
+Texture2D backG;
+Texture2D playerLONG;
+Texture2D enemyLONG;
+Texture2D playerSHORT;
+Texture2D enemySHORT;
+
+Rectangle Player1;
+Rectangle Player2;
 
 void initializePlayers()
 {
 	float P1Y = screenHeight / 2;
 	float P2X = screenWidth - 70;
 	float P2Y = screenHeight / 2;
-	Rectangle Player1 = { P1X, P1Y, 30, playerHeight };
-	Rectangle Player2 = { P2X, P2Y, 30, 100 };
+	float P1X = 40;
+	Player1.x = P1X;
+	Player1.y = P1Y;
+	Player1.width = 30;
+	Player1.height = playerHeight;
+
+	Player2.x = P2X;
+	Player2.y = P2Y;
+	Player2.width = 30;
+	Player2.height = 100;
 }
 
 void loadPlayerTextures()
 {
-	Texture2D title = LoadTexture("Assets/Title.png");
-	Texture2D player = LoadTexture("Assets/P1.png");
-	Texture2D enemy = LoadTexture("Assets/P2.png");
-	Texture2D backG = LoadTexture("Assets/fondo.png");
-	Texture2D playerLONG = LoadTexture("Assets/P1long.png");
-	Texture2D enemyLONG = LoadTexture("Assets/P2long.png");
-	Texture2D playerSHORT = LoadTexture("Assets/P1short.png");
-	Texture2D enemySHORT = LoadTexture("Assets/P2short.png");
+	player = LoadTexture("Assets/P1.png");
+	enemy = LoadTexture("Assets/P2.png");
+	backG = LoadTexture("Assets/fondo.png");
+	playerLONG = LoadTexture("Assets/P1long.png");
+	enemyLONG = LoadTexture("Assets/P2long.png");
+	playerSHORT = LoadTexture("Assets/P1short.png");
+	enemySHORT = LoadTexture("Assets/P2short.png");
 }
 
 void playerMovement()
@@ -75,5 +91,4 @@ void playerMovement()
 			Player2.y += speed;
 		}
 	}
-
 }

@@ -80,7 +80,9 @@ void ballMovement()
 			ballPosition.x -= radio / 2;
 		}
 	}
-	if (ballPosition.y + radio > screenHeight || ballPosition.y - radio < 0 || CheckCollisionCircleRec(ballPosition, radio, Player1) || CheckCollisionCircleRec(ballPosition, radio, Player2))
+	if (ballPosition.y + radio > screenHeight || ballPosition.y - radio < 0 
+		|| CheckCollisionCircleRec(ballPosition, radio, Player1) 
+		|| CheckCollisionCircleRec(ballPosition, radio, Player2))
 	{
 		if (directiony > 0)
 		{

@@ -15,7 +15,7 @@ int main(void)
 		{
 			playGame();
 		}
-		else if (!game && (contadorP1 < 5 && contadorP2 < 5))
+		if (!game && (contadorP1 < 5 && contadorP2 < 5))
 		{
 			menu();
 		}
@@ -24,6 +24,7 @@ int main(void)
 			gameOVER();
 		}
 	}
+
 	CloseAudioDevice();
 	CloseWindow();
 	return 0;

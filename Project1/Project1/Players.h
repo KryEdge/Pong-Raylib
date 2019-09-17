@@ -8,7 +8,7 @@ extern bool ENElong;
 extern bool PLAYlong;
 extern bool ENEshort;
 extern bool PLAYshort;
-extern float P1X = 40;
+extern float P1X;
 extern float P1Y;
 extern float P2X;
 extern float P2Y;

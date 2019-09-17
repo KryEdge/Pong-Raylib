@@ -83,6 +83,7 @@
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)\raylib-2.5.0-Win32-msvc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>raylib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -128,7 +129,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Pelota.cpp" />
     <ClCompile Include="Players.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dibujo.h" />
