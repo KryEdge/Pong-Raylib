@@ -4,7 +4,6 @@
 
 namespace Carceglia
 {
-
 	float directionx = 450.0f;
 	float directiony = 400.0f;
 	int radio = 20;
@@ -83,8 +82,13 @@ namespace Carceglia
 				ballPosition.x -= radio / 2;
 			}
 		}
-		if (ballPosition.y + radio > screenHeight || ballPosition.y - radio < 0
-			|| CheckCollisionCircleRec(ballPosition, radio, player1)
+
+		if (ballPosition.y + radio > screenHeight || ballPosition.y - radio < 0)
+		{
+			directiony *= -1;
+		}
+
+		if (CheckCollisionCircleRec(ballPosition, radio, player1)
 			|| CheckCollisionCircleRec(ballPosition, radio, player2))
 		{
 			if (directiony > 0)
@@ -101,7 +105,10 @@ namespace Carceglia
 				PlaySound(hitWav);
 			}
 
-			directiony *= -1;
+			if (movingUp)
+			{
+				directiony *= -1;
+			}
 
 			if (CheckCollisionCircleRec(ballPosition, radio, player1))
 			{

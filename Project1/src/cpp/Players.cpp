@@ -11,6 +11,7 @@ namespace Carceglia
 	bool playLong = false;
 	bool enemyShort = false;
 	bool playShort = false;
+	bool movingUp = false;
 
 	Texture2D title;
 	Texture2D player;
@@ -60,6 +61,7 @@ namespace Carceglia
 			{
 				player1.y -= speed * GetFrameTime();
 			}
+			movingUp = true;
 		}
 		if (IsKeyDown(KEY_S))
 		{
@@ -67,6 +69,7 @@ namespace Carceglia
 			{
 				player1.y += speed * GetFrameTime();
 			}
+			movingUp = false;
 		}
 		if (IA)
 		{

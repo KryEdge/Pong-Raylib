@@ -14,6 +14,7 @@ extern float P1X;
 extern float P1Y;
 extern float P2X;
 extern float P2Y;
+extern bool movingUp;
 extern Rectangle player1;
 extern Rectangle player2;
 extern Texture2D title;
