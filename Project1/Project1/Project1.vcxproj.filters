@@ -1,60 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="src">
+      <UniqueIdentifier>{31dd9765-8134-42f0-856f-2077abb21078}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="src\cpp">
+      <UniqueIdentifier>{83f309e2-3951-4fc0-8f31-f7fc53ca2207}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="src\headers">
+      <UniqueIdentifier>{fc609a54-9f95-4272-80c2-55459afa7c7c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Pelota.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Dibujo.cpp">
+      <Filter>src\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\game.cpp">
+      <Filter>src\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Players.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\GameOVER.cpp">
+      <Filter>src\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Dibujo.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Menu.cpp">
+      <Filter>src\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Pelota.cpp">
+      <Filter>src\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="GameOVER.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Players.cpp">
+      <Filter>src\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
+    <ClCompile Include="..\src\cpp\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pelota.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\headers\Dibujo.h">
+      <Filter>src\headers</Filter>
     </ClInclude>
-    <ClInclude Include="game.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\headers\game.h">
+      <Filter>src\headers</Filter>
     </ClInclude>
-    <ClInclude Include="Players.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\headers\GMenu.h">
+      <Filter>src\headers</Filter>
     </ClInclude>
-    <ClInclude Include="Dibujo.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\headers\GOver.h">
+      <Filter>src\headers</Filter>
     </ClInclude>
-    <ClInclude Include="GOver.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\headers\pelota.h">
+      <Filter>src\headers</Filter>
     </ClInclude>
-    <ClInclude Include="GMenu.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\headers\Players.h">
+      <Filter>src\headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

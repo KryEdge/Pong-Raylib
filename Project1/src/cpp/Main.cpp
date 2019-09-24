@@ -11,17 +11,19 @@ int main(void)
 
 	while (!WindowShouldClose())
 	{
+		if (!game && (contadorP1 < 5 && contadorP2 < 5))
+		{
+			loadMenu();
+		}
+
 		if (game)
 		{
 			playGame();
 		}
-		if (!game && (contadorP1 < 5 && contadorP2 < 5))
-		{
-			menu();
-		}
+		
 		if (!game && (contadorP1 == 5 || contadorP2 == 5))
 		{
-			gameOVER();
+			endGame();
 		}
 	}
 

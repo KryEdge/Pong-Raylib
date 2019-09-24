@@ -1,10 +1,10 @@
 #pragma once
 
 extern Color colorBola;
-extern int directionx;
-extern int directiony;
+extern float directionx;
+extern float directiony;
 extern int radio;
 extern Vector2 ballPosition;
 
 void initializeBall();
-void ballMovement();
+void updateBallMovement();

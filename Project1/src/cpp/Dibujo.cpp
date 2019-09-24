@@ -14,12 +14,12 @@ void drawGame()
 	{
 		if (numRand == 200)
 		{
-			if (pUpRand == 0)
+			if (powUpRand == 0)
 			{
 				pUpY = GetRandomValue(40, screenHeight - 40);
-				pUpRand = GetRandomValue(1, 3);
+				powUpRand = GetRandomValue(1, 3);
 			}
-			switch (pUpRand)
+			switch (powUpRand)
 			{
 			case 1:
 				pUpPosition1.x = screenWidth / 2;
@@ -48,64 +48,64 @@ void drawGame()
 	switch (color1)
 	{
 	case 0:
-		DrawRectangleRec(Player1, RED);
+		DrawRectangleRec(player1, RED);
 		break;
 	case 1:
-		DrawRectangleRec(Player1, SKYBLUE);
+		DrawRectangleRec(player1, SKYBLUE);
 		break;
 	case 2:
-		DrawRectangleRec(Player1, GREEN);
+		DrawRectangleRec(player1, GREEN);
 		break;
 	case 3:
-		DrawRectangleRec(Player1, YELLOW);
+		DrawRectangleRec(player1, YELLOW);
 		break;
 	default:
 		break;
 	}
-	if (!PLAYlong && !PLAYshort)
+	if (!playLong && !playShort)
 	{
-		DrawTexture(player, Player1.x - 35, Player1.y, WHITE);
+		DrawTexture(player, player1.x - 35, player1.y, WHITE);
 	}
-	else if (PLAYlong)
+	else if (playLong)
 	{
-		DrawTexture(playerLONG, Player1.x - 35, Player1.y, WHITE);
+		DrawTexture(playerLONG, player1.x - 35, player1.y, WHITE);
 	}
-	else if (PLAYshort)
+	else if (playShort)
 	{
-		DrawTexture(playerSHORT, Player1.x - 35, Player1.y, WHITE);
+		DrawTexture(playerSHORT, player1.x - 35, player1.y, WHITE);
 	}
 	switch (color2)
 	{
 	case 0:
-		DrawRectangleRec(Player2, DARKGREEN);
+		DrawRectangleRec(player2, DARKGREEN);
 		break;
 	case 1:
-		DrawRectangleRec(Player2, ORANGE);
+		DrawRectangleRec(player2, ORANGE);
 		break;
 	case 2:
-		DrawRectangleRec(Player2, BLUE);
+		DrawRectangleRec(player2, BLUE);
 		break;
 	case 3:
-		DrawRectangleRec(Player2, MAGENTA);
+		DrawRectangleRec(player2, MAGENTA);
 		break;
 	default:
 		break;
 	}
-	if (!ENElong && !ENEshort)
+	if (!enemyLong && !enemyShort)
 	{
-		DrawTexture(enemy, Player2.x - 35, Player2.y, WHITE);
+		DrawTexture(enemy, player2.x - 35, player2.y, WHITE);
 	}
-	else if (ENElong)
+	else if (enemyLong)
 	{
-		DrawTexture(enemyLONG, Player2.x - 35, Player2.y, WHITE);
+		DrawTexture(enemyLONG, player2.x - 35, player2.y, WHITE);
 	}
-	else if (ENEshort)
+	else if (enemyShort)
 	{
-		DrawTexture(enemySHORT, Player2.x - 35, Player2.y, WHITE);
+		DrawTexture(enemySHORT, player2.x - 35, player2.y, WHITE);
 	}
 
-	DrawRectangleRec(Goal1, SKYBLUE);
-	DrawRectangleRec(Goal2, SKYBLUE);
+	DrawRectangleRec(goal1, SKYBLUE);
+	DrawRectangleRec(goal2, SKYBLUE);
 	DrawText(FormatText(" %i", contadorP1), 5, 5, 20, RED);
 	DrawText(FormatText(" %i", contadorP2), screenWidth - 25, 5, 20, RED);
 	DrawCircleV(ballPosition, radio, colorBola);

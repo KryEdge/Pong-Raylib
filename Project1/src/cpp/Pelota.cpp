@@ -2,8 +2,8 @@
 #include "Players.h"
 #include "raylib.h"
 
-int directionx = 7;
-int directiony = 6;
+float directionx = 450.0f;
+float directiony = 400.0f;
 int radio = 20;
 Vector2 ballPosition;
 Color colorBola;
@@ -14,21 +14,21 @@ void initializeBall()
 	Vector2 ballPosition = { (float)screenWidth / 2, (float)screenHeight / 2 };
 }
 
-void ballMovement()
+void updateBallMovement()
 {
-	ballPosition.x += directionx;
-	ballPosition.y += directiony;
+	ballPosition.x += directionx * GetFrameTime();
+	ballPosition.y += directiony * GetFrameTime();
 
 	if (ballPosition.x + radio > screenWidth || ballPosition.x - radio < 0
-		|| CheckCollisionCircleRec(ballPosition, radio, Player1)
-		|| CheckCollisionCircleRec(ballPosition, radio, Player2))
+		|| CheckCollisionCircleRec(ballPosition, radio, player1)
+		|| CheckCollisionCircleRec(ballPosition, radio, player2))
 	{
 		if (directionx > 0)
 		{
 			switch (color2)
 			{
 			case 0:
-				colorBola = LIGHTGRAY;
+				colorBola = DARKGREEN;
 				break;
 			case 1:
 				colorBola = ORANGE;
@@ -71,18 +71,18 @@ void ballMovement()
 
 		directionx *= -1;
 
-		if (CheckCollisionCircleRec(ballPosition, radio, Player1))
+		if (CheckCollisionCircleRec(ballPosition, radio, player1))
 		{
 			ballPosition.x += radio / 2;
 		}
-		if (CheckCollisionCircleRec(ballPosition, radio, Player2))
+		if (CheckCollisionCircleRec(ballPosition, radio, player2))
 		{
 			ballPosition.x -= radio / 2;
 		}
 	}
 	if (ballPosition.y + radio > screenHeight || ballPosition.y - radio < 0 
-		|| CheckCollisionCircleRec(ballPosition, radio, Player1) 
-		|| CheckCollisionCircleRec(ballPosition, radio, Player2))
+		|| CheckCollisionCircleRec(ballPosition, radio, player1) 
+		|| CheckCollisionCircleRec(ballPosition, radio, player2))
 	{
 		if (directiony > 0)
 		{
@@ -100,11 +100,11 @@ void ballMovement()
 
 		directiony *= -1;
 
-		if (CheckCollisionCircleRec(ballPosition, radio, Player1))
+		if (CheckCollisionCircleRec(ballPosition, radio, player1))
 		{
 			ballPosition.y += radio / 2;
 		}
-		if (CheckCollisionCircleRec(ballPosition, radio, Player2))
+		if (CheckCollisionCircleRec(ballPosition, radio, player2))
 		{
 			ballPosition.y -= radio / 2;
 		}

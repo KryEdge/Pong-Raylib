@@ -3,19 +3,19 @@
 #include "Players.h"
 #include "Dibujo.h"
 
-bool Init = false;
+bool init = false;
 extern const int screenWidth = 800;
 extern const int screenHeight = 450;
 int numberPUP = 0;
 int numRand = 0;
-int pUpRand = 0;
+int powUpRand = 0;
 bool game = false;
 bool win = false;
 extern const float incremento = 0.3;
 int contadorP1 = 0;
 int contadorP2 = 0;
-extern const float speed = 7;
-extern const float speedIA = 5;
+extern const float speed = 400.0f;
+extern const float speedIA = 350.0f;
 bool IA = false;
 int radiopUp = 20;
 Vector2 pUpPosition1 = { (int)0,(int)0 };
@@ -24,13 +24,13 @@ Vector2 pUpPosition3 = { (int)0,(int)0 };
 int pUpY;
 Sound hitWav;
 Sound pickupWav;
-Rectangle Goal1;
-Rectangle Goal2;
+Rectangle goal1;
+Rectangle goal2;
 
 void initializeGoal()
 {
-	Goal1 = { 0, 0, 30, screenHeight };
-	Goal2 = { screenWidth - 30, 0, 30, screenHeight };
+	goal1 = { 0, 0, 30, screenHeight };
+	goal2 = { screenWidth - 30, 0, 30, screenHeight };
 }
 
 void loadSound()
@@ -39,32 +39,32 @@ void loadSound()
 	pickupWav = LoadSound("Assets/pickup.wav");
 }
 
-void powerupCollision()
+void checkPowUpCollision()
 {
-	if (CheckCollisionCircleRec(ballPosition, radio, Goal1))
+	if (CheckCollisionCircleRec(ballPosition, radio, goal1))
 	{
-		Player1.height = playerHeight;
-		Player2.height = playerHeight;
+		player1.height = playerHeight;
+		player2.height = playerHeight;
 		radio = radiopUp;
 		contadorP2++;
 		ballPosition.x = screenWidth / 2;
 		ballPosition.y = screenHeight / 2;
-		PLAYlong = false;
-		ENElong = false;
-		PLAYshort = false;
-		ENEshort = false;
+		playLong = false;
+		enemyLong = false;
+		playShort = false;
+		enemyShort = false;
 		colorBola = WHITE;
 	}
-	if (CheckCollisionCircleRec(ballPosition, radio, Goal2))
+	if (CheckCollisionCircleRec(ballPosition, radio, goal2))
 	{
-		Player1.height = playerHeight;
-		Player2.height = playerHeight;
+		player1.height = playerHeight;
+		player2.height = playerHeight;
 		radio = radiopUp;
 		contadorP1++;
-		PLAYlong = false;
-		ENElong = false;
-		PLAYshort = false;
-		ENEshort = false;
+		playLong = false;
+		enemyLong = false;
+		playShort = false;
+		enemyShort = false;
 		ballPosition.x = screenWidth / 2;
 		ballPosition.y = screenHeight / 2;
 		colorBola = WHITE;
@@ -72,13 +72,13 @@ void powerupCollision()
 
 	if (CheckCollisionCircles(ballPosition, radio, pUpPosition1, radiopUp) && directionx > 0)
 	{
-		Player1.height = 200;
-		PLAYlong = true;
-		PLAYshort = false;
+		player1.height = 200;
+		playLong = true;
+		playShort = false;
 		pUpPosition1.x = 0;
 		pUpPosition1.y = 0;
 		numRand = 0;
-		pUpRand = 0;
+		powUpRand = 0;
 		if (!IsSoundPlaying(pickupWav))
 		{
 			PlaySound(pickupWav);
@@ -87,13 +87,13 @@ void powerupCollision()
 	}
 	else if (CheckCollisionCircles(ballPosition, radio, pUpPosition1, radiopUp) && directionx < 0)
 	{
-		Player2.height = 200;
-		ENElong = true;
-		ENEshort = false;
+		player2.height = 200;
+		enemyLong = true;
+		enemyShort = false;
 		pUpPosition1.x = 0;
 		pUpPosition1.y = 0;
 		numRand = 0;
-		pUpRand = 0;
+		powUpRand = 0;
 
 		if (!IsSoundPlaying(pickupWav))
 		{
@@ -102,13 +102,13 @@ void powerupCollision()
 	}
 	if (CheckCollisionCircles(ballPosition, radio, pUpPosition2, radiopUp && directionx > 0))
 	{
-		Player2.height = 50;
-		ENEshort = true;
-		ENElong = false;
+		player2.height = 50;
+		enemyShort = true;
+		enemyLong = false;
 		pUpPosition2.x = 0;
 		pUpPosition2.y = 0;
 		numRand = 0;
-		pUpRand = 0;
+		powUpRand = 0;
 		if (!IsSoundPlaying(pickupWav))
 		{
 			PlaySound(pickupWav);
@@ -117,13 +117,13 @@ void powerupCollision()
 	}
 	else if (CheckCollisionCircles(ballPosition, radio, pUpPosition2, radiopUp) && directionx < 0)
 	{
-		Player1.height = 50;
-		PLAYshort = true;
-		PLAYlong = false;
+		player1.height = 50;
+		playShort = true;
+		playLong = false;
 		pUpPosition2.x = 0;
 		pUpPosition2.y = 0;
 		numRand = 0;
-		pUpRand = 0;
+		powUpRand = 0;
 
 		if (!IsSoundPlaying(pickupWav))
 		{
@@ -133,11 +133,11 @@ void powerupCollision()
 	}
 	if (CheckCollisionCircles(ballPosition, radio, pUpPosition3, radiopUp))
 	{
-		radio = 40;
+		radio = 10;
 		pUpPosition3.x = -10;
 		pUpPosition3.y = -10;
 		numRand = 0;
-		pUpRand = 0;
+		powUpRand = 0;
 
 		if (ballPosition.y - radio < 0)
 		{
@@ -158,24 +158,24 @@ void powerupCollision()
 
 void playGame()
 {
-	if (!Init)
+	if (!init)
 	{
 		loadPlayerTextures();
 		loadSound();
 		initializeGoal();
 		initializeBall();
 		initializePlayers();
-		Init = true;
+		init = true;
 	}
 
-	ballMovement();
+	updateBallMovement();
 	playerMovement();
-	powerupCollision();		
+	checkPowUpCollision();		
 	drawGame();
 
 	if (contadorP1 == 5 || contadorP2 == 5)
 	{
-		Init = false;
+		init = false;
 		game = false;
 	}	
 }

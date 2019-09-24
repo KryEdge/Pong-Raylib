@@ -4,7 +4,7 @@
 
 bool Initialize = false;
 
-void menu()
+void loadMenu()
 {
 	if (!Initialize)
 	{

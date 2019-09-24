@@ -3,7 +3,7 @@
 #include "game.h"
 #include "GMenu.h"
 
-void gameOVER()
+void endGame()
 {
 	BeginDrawing();
 	ClearBackground(BLACK);
@@ -11,9 +11,14 @@ void gameOVER()
 	{
 		DrawText("Felicidades Jugador 1!", 100, screenHeight / 4, 50, WHITE);
 	}
-	if (contadorP2 == 5)
+	if (contadorP2 == 5 && !IA)
 	{
 		DrawText("Felicidades Jugador 2!", 100, screenHeight / 4, 50, WHITE);
+	}
+	else if (contadorP2 == 5 && IA)
+	{
+		DrawText("Ha ganado la maquina", 180, screenHeight / 4, 40, WHITE);
+		DrawText("sos una decepcion para la humanidad", 20, (screenHeight / 4) + 40, 40, WHITE);
 	}
 	DrawText(FormatText(" %i", contadorP1), 260, 300, 30, WHITE);
 	DrawText(FormatText("Puntaje J1:"), 100, 300, 30, WHITE);

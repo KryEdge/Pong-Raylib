@@ -2,4 +2,4 @@
 
 extern bool Initialize;
 
-void menu();
+void loadMenu();
