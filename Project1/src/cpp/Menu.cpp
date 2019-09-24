@@ -21,6 +21,8 @@ namespace Carceglia
 		DrawTexture(title, screenWidth / 2 - 80, 0, WHITE);
 		DrawTexture(instructions, 20, 0, WHITE);
 
+		DrawText("Gana el primero en", screenWidth - 250, 20, 30, WHITE);
+		DrawText("llegar a 5 puntos", screenWidth - 270, 50, 30, WHITE);
 		DrawText("Elija su color", 210, screenHeight / 2, 60, WHITE);
 		DrawText("Para jugar contra otra persona presione Enter", 40, 360, 30, WHITE);
 		DrawText("Para Jugar contra la maquina presione Q", 90, 400, 30, WHITE);
