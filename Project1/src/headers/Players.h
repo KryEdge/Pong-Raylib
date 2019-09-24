@@ -1,6 +1,8 @@
 #pragma once
 #include"raylib.h"
 
+namespace Carceglia
+{
 extern int color1;
 extern int color2;
 extern int playerHeight;
@@ -26,3 +28,4 @@ extern Texture2D enemySHORT;
 void initializePlayers();
 void loadPlayerTextures();
 void playerMovement();
+}

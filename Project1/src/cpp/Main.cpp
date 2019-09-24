@@ -2,6 +2,7 @@
 #include "game.h"
 #include "GMenu.h"
 #include "GOver.h"
+using namespace Carceglia;
 
 int main(void)
 {
