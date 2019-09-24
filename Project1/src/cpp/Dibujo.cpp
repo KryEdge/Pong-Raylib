@@ -106,10 +106,18 @@ namespace Carceglia
 			DrawTexture(enemySHORT, player2.x - 35, player2.y, WHITE);
 		}
 
-		DrawRectangleRec(goal1, SKYBLUE);
-		DrawRectangleRec(goal2, SKYBLUE);
+		DrawRectangleRec(goal1, LIGHTGRAY);
+		DrawRectangleRec(goal2, LIGHTGRAY);
 		DrawText(FormatText(" %i", contadorP1), 5, 5, 20, RED);
+		DrawText("G", 7, 150, 20, colorBola);
+		DrawText("O", 7, 190, 20, colorBola);
+		DrawText("A", 7, 230, 20, colorBola);
+		DrawText("L", 7, 270, 20, colorBola);
 		DrawText(FormatText(" %i", contadorP2), screenWidth - 25, 5, 20, RED);
+		DrawText("G", screenWidth - 20, 150, 20, colorBola);
+		DrawText("O", screenWidth - 20, 190, 20, colorBola);
+		DrawText("A", screenWidth - 20, 230, 20, colorBola);
+		DrawText("L", screenWidth - 20, 270, 20, colorBola);
 		DrawCircleV(ballPosition, radio, colorBola);
 
 		EndDrawing();
