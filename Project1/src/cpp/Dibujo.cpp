@@ -1,5 +1,8 @@
-#include "game.h"
+#include "Dibujo.h"
+
 #include "raylib.h"
+
+#include "game.h"
 #include "pelota.h"
 #include "Players.h"
 

@@ -1,23 +1,27 @@
+#include "GOver.h"
+
 #include "raylib.h"
+
 #include "Players.h"
 #include "game.h"
 #include "GMenu.h"
 
 namespace Carceglia
 {
+	const int victory = 5;
 	void endGame()
 	{
 		BeginDrawing();
 		ClearBackground(BLACK);
-		if (contadorP1 == 5)
+		if (contadorP1 == victory)
 		{
 			DrawText("Felicidades Jugador 1!", 100, screenHeight / 4, 50, WHITE);
 		}
-		if (contadorP2 == 5 && !IA)
+		if (contadorP2 == victory && !IA)
 		{
 			DrawText("Felicidades Jugador 2!", 100, screenHeight / 4, 50, WHITE);
 		}
-		else if (contadorP2 == 5 && IA)
+		else if (contadorP2 == victory && IA)
 		{
 			DrawText("Ha ganado la maquina", 180, screenHeight / 4, 40, WHITE);
 			DrawText("sos una decepcion para la humanidad", 20, (screenHeight / 4) + 40, 40, WHITE);

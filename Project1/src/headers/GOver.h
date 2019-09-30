@@ -2,5 +2,5 @@
 
 namespace Carceglia
 {
-void endGame();
+	void endGame();
 }

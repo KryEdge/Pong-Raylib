@@ -25,6 +25,7 @@ namespace Carceglia
 	extern int pUpY;
 	extern Sound hitWav;
 	extern Sound pickupWav;
+	extern Music song;
 
 	void playGame();
 }

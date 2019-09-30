@@ -1,4 +1,7 @@
+#include"game.h"
+
 #include "raylib.h"
+
 #include "pelota.h"
 #include "Players.h"
 #include "Dibujo.h"
@@ -26,6 +29,7 @@ namespace Carceglia
 	int pUpY;
 	Sound hitWav;
 	Sound pickupWav;
+	Music song;
 	Rectangle goal1;
 	Rectangle goal2;
 
@@ -39,6 +43,7 @@ namespace Carceglia
 	{
 		hitWav = LoadSound("Assets/hit.wav");
 		pickupWav = LoadSound("Assets/pickup.wav");
+		song = LoadMusicStream("Assets/BuddyRyo.ogg");
 	}
 
 	void checkPowUpCollision()
@@ -170,6 +175,12 @@ namespace Carceglia
 			init = true;
 		}
 
+		if (!IsMusicPlaying(song))
+		{
+			PlayMusicStream(song);
+		}
+		
+		UpdateMusicStream(song);
 		updateBallMovement();
 		playerMovement();
 		checkPowUpCollision();
@@ -177,6 +188,7 @@ namespace Carceglia
 
 		if (contadorP1 == 5 || contadorP2 == 5)
 		{
+			StopMusicStream(song);
 			init = false;
 			game = false;
 		}
